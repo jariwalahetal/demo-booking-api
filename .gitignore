@@ -1,2 +1,4 @@
-/packages/
+#NuGet
+packages
+bin
 !packages/repositories.config
