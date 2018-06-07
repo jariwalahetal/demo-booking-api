@@ -1,0 +1,115 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Demo-API",
+		"_postman_id": "d3997d86-d62d-a10d-0198-fbd546db1a90",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost/APICode/login",
+			"request": {
+				"url": "{{demo-url}}/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Email\":\"{{emailid}}\",\n\t\"Password\":\"{{password}}\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{{demo-url}}/getroomtype/{{userid}}",
+			"request": {
+				"url": "{{demo-url}}/getroomtype/{{userid}}",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{{demo-url}}/getrooms/{{userid}}",
+			"request": {
+				"url": "{{demo-url}}/getrooms/{{userid}}",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{{demo-url}}/bookroom",
+			"request": {
+				"url": "{{demo-url}}/bookroom",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"UserId\":1,\n\t\"RoomId\":1,\n\t\"BookingDate\":\"06/28/2018\",\n\t\"StartTime\":\"09:00\",\n\t\"EndTime\":\"10:00\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{{demo-url}}/AllBookings/06/29/2018",
+			"request": {
+				"url": "{{demo-url}}/AllBookings/06/28/2018",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{{demo-url}}/userbookings/1/06/28/2018",
+			"request": {
+				"url": "{{demo-url}}/userbookings/1/06/28/2018",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{{demo-url}}/deletebooking",
+			"request": {
+				"url": "{{demo-url}}/deletebooking",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Id\":6\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
